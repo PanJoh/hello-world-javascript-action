@@ -1,0 +1,16 @@
+name: Hello World
+description: Greet someone and recored the time
+
+inputs:
+  who-to-greet: # id of input
+    description: Who to greet
+    requierd: true
+    default: World
+
+outputs:
+  time: # id of ouput
+    description: The time we greet you
+
+runs:
+  using: node24
+  main: dist/index.js
